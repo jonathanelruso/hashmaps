@@ -9,18 +9,19 @@ public class Principal extends juego {
         do {
             System.out.println("Menu");
             System.out.println("1. Jugar nueva partida");
+            System.out.println("2. Historial de partidas");
             switch (opcion = sc.nextInt()) {
                 case 1:
                     jugarPartida();
                     break;
                 case 2:
-
+                    historialPartidas();
                     break;
                 case 3:
 
                     break;
                 case 4:
-
+                    System.out.println("Saliendo del programa.");
                     break;
                 default:
                     System.out.println("Opcion invalida");

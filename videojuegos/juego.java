@@ -81,6 +81,10 @@ public class juego {
                     break;
             }
         } while (opcion != 4);
+        sc.close();
+    }
+
+    public static void historialPartidas() {
 
     }
 }
