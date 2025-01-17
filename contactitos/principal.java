@@ -22,14 +22,15 @@ public class principal {
                     break;
                 case 3:
                     contactos.buscarContactos();
-                    return;
+                    break;
                 case 4:
                     System.out.println("Saliendo del programa");
+                    break;
                 default:
                     System.out.println("Opcion invalida");
                     break;
             }
         } while (respuesta != 4);
-
+        scanner.close();
     }
 }

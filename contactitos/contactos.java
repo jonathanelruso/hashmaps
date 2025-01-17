@@ -23,11 +23,13 @@ public class contactos {
             numero = sc.nextInt();
             agendaContactos.put(nombre, numero);
         }
+
+        sc.close();
     }
 
     public static void mostrarContactos() {
         if (agendaContactos.isEmpty()) {
-            System.out.println("No hay nada pedazo de mierdis");
+            System.out.println("No hay contactos registrados");
             return;
         } else {
             System.out.println("Estos son tus contactos: ");
@@ -46,6 +48,8 @@ public class contactos {
             System.out.println(agendaContactos.get(respuesta));
         } else {
             System.out.println("Ese contacto no existe");
+            return;
         }
+        scanner.close();
     }
 }
