@@ -44,12 +44,34 @@ public class juego {
                         System.out.println(
                                 "Empate. Tu sacaste " + jugadas[opcion - 1] + " y la CPU " + jugadas[jugadorCPU - 1]);
                     }
+
+                    if (jugadorCPU == 3) {
+                        System.out.println(
+                                "Perdiste, sacaste " + jugadas[opcion - 1] + " y la CPU " + jugadas[jugadorCPU - 1]);
+                    }
+
+                    if (jugadorCPU == 1) {
+                        System.out.println(
+                                "Felicidades, sacaste " + jugadas[opcion - 1] + " y la CPU " + jugadas[jugadorCPU - 1]);
+                    }
+
                     return;
                 case 3:
                     if (opcion == jugadorCPU) {
                         System.out.println(
                                 "Empate. Tu sacaste " + jugadas[opcion - 1] + " y la CPU " + jugadas[jugadorCPU - 1]);
                     }
+
+                    if (jugadorCPU == 2) {
+                        System.out.println(
+                                "Felicidades, sacaste " + jugadas[opcion - 1] + " y la CPU " + jugadas[jugadorCPU - 1]);
+                    }
+
+                    if (jugadorCPU == 1) {
+                        System.out.println(
+                                "Perdiste, sacaste " + jugadas[opcion - 1] + " y la CPU " + jugadas[jugadorCPU - 1]);
+                    }
+
                     return;
                 case 4:
                     System.out.println("Volviendo al menu...");
